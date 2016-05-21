@@ -1,44 +1,34 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
-2 info using npm@3.8.8
+2 info using npm@3.8.9
 3 info using node@v0.12.7
 4 verbose node symlink /usr/local/bin/node
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info lifecycle topan@0.0.0~prestart: topan@0.0.0
-7 silly lifecycle topan@0.0.0~prestart: no script for prestart, continuing
-8 info lifecycle topan@0.0.0~start: topan@0.0.0
-9 verbose lifecycle topan@0.0.0~start: unsafe-perm in lifecycle true
-10 verbose lifecycle topan@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/xristol/topan/node_modules/.bin:/usr/local/bin:/Applications/XAMPP/xamppfiles/bin/:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-11 verbose lifecycle topan@0.0.0~start: CWD: /Users/xristol/topan
-12 silly lifecycle topan@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
-13 silly lifecycle topan@0.0.0~start: Returned: code: 1  signal: null
-14 info lifecycle topan@0.0.0~start: Failed to exec start script
-15 verbose stack Error: topan@0.0.0 start: `node ./bin/www`
-15 verbose stack Exit status 1
-15 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:244:16)
-15 verbose stack     at EventEmitter.emit (events.js:110:17)
-15 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-15 verbose stack     at ChildProcess.emit (events.js:110:17)
-15 verbose stack     at maybeClose (child_process.js:1015:16)
-15 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
-16 verbose pkgid topan@0.0.0
-17 verbose cwd /Users/xristol/topan
-18 error Darwin 15.0.0
-19 error argv "node" "/usr/local/bin/npm" "start"
-20 error node v0.12.7
-21 error npm  v3.8.8
-22 error code ELIFECYCLE
-23 error topan@0.0.0 start: `node ./bin/www`
-23 error Exit status 1
-24 error Failed at the topan@0.0.0 start script 'node ./bin/www'.
-24 error Make sure you have the latest version of node.js and npm installed.
-24 error If you do, this is most likely a problem with the topan package,
-24 error not with npm itself.
-24 error Tell the author that this fails on your system:
-24 error     node ./bin/www
-24 error You can get information on how to open an issue for this project with:
-24 error     npm bugs topan
-24 error Or if that isn't available, you can get their info via:
-24 error     npm owner ls topan
-24 error There is likely additional logging output above.
-25 verbose exit [ 1, true ]
+5 verbose stack Error: Failed to parse json
+5 verbose stack Unexpected token 'n' at 10:7
+5 verbose stack      "npm": "~3.8.9"
+5 verbose stack       ^
+5 verbose stack     at parseError (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:390:11)
+5 verbose stack     at parseJson (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:79:23)
+5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+5 verbose stack     at fs.js:334:14
+5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:43:10
+5 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+6 verbose cwd /Users/xristol/topan
+7 error Darwin 15.4.0
+8 error argv "node" "/usr/local/bin/npm" "start"
+9 error node v0.12.7
+10 error npm  v3.8.9
+11 error file /Users/xristol/topan/package.json
+12 error code EJSONPARSE
+13 error Failed to parse json
+13 error Unexpected token 'n' at 10:7
+13 error      "npm": "~3.8.9"
+13 error       ^
+14 error File: /Users/xristol/topan/package.json
+15 error Failed to parse package.json data.
+15 error package.json must be actual JSON, not just JavaScript.
+15 error
+15 error This is not a bug in npm.
+15 error Tell the package author to fix their package.json file. JSON.parse
+16 verbose exit [ 1, true ]
