@@ -7,6 +7,37 @@ html
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')    
   body
-    block content
+
+     .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          .button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false' aria-controls='navbar') 
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+           
+        
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+                a(href="#") Home
+                li
+                    a(href='/about/') About Us
+                li
+                    a(href='/contact/') Contact
+                
+           ul.nav.navbar-nav.navbar-right
+                li
+                    a(href="/navbar/") Default
+
+                li
+                    a(href="../navbar-fixed-top/") Fixed top
+       
+     .container              
+      block content
+      footer
+        p.
+          &copy; 2016 Topan, Nigeria.</p>
     script(src='//code.jquery.com/jquery-1.12.0.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
